@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const port = 3000;
+const mongoose = require("./config/mongoose");
 // imorting layouts and using them
 const expressLayouts = require("express-ejs-layouts");
 app.use(expressLayouts);
