@@ -1,6 +1,10 @@
-exports.testfunction = function (req, res) {
-  return res.end("<h1> Welcome to user controller </h1>");
+exports.getUser = function (req, res) {
+  return res.render("user", {
+    title: "UserPage",
+  });
 };
-exports.postfunction = function (req, res) {
-  return res.end("<h1> ./user/profile/postfinction </h1>");
+exports.postUser = function (req, res) {
+  return res.render("user", {
+    title: "UserPage",
+  });
 };
